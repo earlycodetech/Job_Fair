@@ -63,31 +63,31 @@
     </section>
 
 <!-- about us -->
-    <section class="pt-5">
-        <div id="carouselExampleCaptions" class="carousel slide">
+    <section class="">
+        <div id="carouselExampleCaptions" class="carousel carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" data-bs-interval="2000">
                 <img src="assets/img/about1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption top-50 d-none d-md-block">
                   <h5> </h5>
                   <p class=" fw-bolder fs-1 ">WE LOOK OUT FOR THE BEST.</p>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="2000">
                 <img src="assets/img/about2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption top-50 d-none d-md-block">
                   <h5></h5>
                   <p class=" fw-bolder fs-1 "> WE TRAIN AND RE-TRAIN THEM.</p>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="2000">
                 <img src="assets/img/about3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption top-50 d-none d-md-block">
                   <h5></h5>
                   <p class=" fw-bolder fs-1 ">WE INTEGRATE THEM INTO THE SYSTEM.</p>
                 </div>
@@ -105,7 +105,7 @@
     </section >
     <div>
         <h1 class="pt-5 text-center fs-1 fw-bolder text-danger">ABOUT JOB FAIR</h1>
-<p class="text-center fs-3">Job Fair is licensed by the federal government of Nigeria as a an institution. <br>
+<p class="text-center fs-5">Job Fair is licensed by the federal government of Nigeria as a an institution. <br>
 
 This means we are authorised to providejob services to individuals and businesses. <br>
 
@@ -119,13 +119,13 @@ We have strong IT infrastructure and digital channels which we deploy to provide
             <div class="row text-start">
               <div class="col-12 col-sm-6 col-md-4 col-lg-8   ">
                 <h1 class=" text-danger">Our Vision</h1>
-                <p class="fs-4">To build an enduring and sustainable customer-focused financial institution.</p>
+                <p class="fs-6 lh-lg px-3 mb-5">To build an enduring and sustainable customer-focused financial institution.</p>
                 <p><hr></p>
                 <h1 class=" text-danger">Our Mission</h1>
-                <p class="fs-4">To provide our customers with unique experience, be their preferred Job partner and nurture the attainment of their objectives</p>
+                <p class="fs-6 lh-lg px-3 mb-5">To provide our customers with unique experience, be their preferred Job partner and nurture the attainment of their objectives</p>
                 <hr>
                 <h1 class=" text-danger">Our Business Profile</h1>
-                <p class="fs-4">JOb FAir is an innovative Job institution that provides personal, private, corporate, commercial and digital Recruitment and  Job solutions. Our tailored emploment services delivery includes: Business Advisory, Portfolio Management, Personalised Relationship Management, Fast-tracked Service delivery and Self-service solutions Training and Re- Training of staff.
+                <p class="fs-6 lh-lg px-3 mb-5">JOb FAir is an innovative Job institution that provides personal, private, corporate, commercial and digital Recruitment and  Job solutions. Our tailored emploment services delivery includes: Business Advisory, Portfolio Management, Personalised Relationship Management, Fast-tracked Service delivery and Self-service solutions Training and Re- Training of staff.
 
                     Job Fair competitive advantage in Private, Institutional, Business and Personal employment is driven by the philosophy to create support and value for Institutions, Agencies, SMEs and HNIs. Our business development strategy also focuses on developing expertise and collaborating to improve the non-oil (emerging) sector of the Nigerian Economy, which includes but not limited to Agriculture, Mining, Hospitality, E-commerce, and Art & Entertainment.
                     
