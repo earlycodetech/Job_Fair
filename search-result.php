@@ -19,21 +19,15 @@
     <section>
       <?php include "assets/includes/nav.php" ?>
     </section>
+    <h1>
+        <?php echo $_POST['search'];?>
+    </h1>
+        <?php 
+        var_dump($_GET);
+        var_dump($_POST);
+
+        ?>
     
-
-  <section>
-        <div  class="container-fluid vh-100 hero-bg d-flex justify-content-center align-items-center">
-            <div class="fs-1 fw-bold text-center">
-                <p class="text-white">Welcome to Job Fair <br> Where Everybody must work</p>
-
-                <a href="#" class="btn btn-outline-light">Create an Account Now</a>
-                <a href="#" class="btn btn-outline-info">Sign In</a>
-            </div>
-        </div>
-    </section>
-
-
-
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
