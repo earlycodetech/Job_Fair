@@ -18,7 +18,7 @@
 <body>
     <!-- Navbar -->
     <section>
-        <?php include "assets/includes/nav.php" ?>
+      <?php include "assets/includes/nav.php" ?>
     </section>
 
 <!-- about us -->

@@ -3,3 +3,10 @@
     background-size: cover; 
     background-position: center;
 }
+
+.hero-two-bg {
+    background-image: url(../img/office.jpg); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+}

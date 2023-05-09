@@ -18,20 +18,20 @@
 <body>
     <!-- Navbar -->
     <section>
-        <?php include_once "assets/includes/nav.php" ?>
+      <?php include "assets/includes/nav.php" ?>
     </section>
 
-<h1>
-    <?php echo $_POST['search']; ?>
-</h1>
-    <?php 
+    <h1>
+        <?php echo $_POST["search"]; ?>
+    </h1>
+
+    <?php
         var_dump($_GET);
         var_dump($_POST);
-    
     ?>
-
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
+    
 
 </html>
