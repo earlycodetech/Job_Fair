@@ -16,19 +16,23 @@
 </head>
 
 <body>
+
+    <!-- Navbar -->
     <section>
       <?php include "assets/includes/nav.php" ?>
     </section>
+
     <h1>
-        <?php echo $_POST['search'];?>
+        <?php echo $_POST["search"]; ?>
     </h1>
-        <?php 
+
+    <?php
         var_dump($_GET);
         var_dump($_POST);
+    ?>
 
-        ?>
-    
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
+    
 
 </html>

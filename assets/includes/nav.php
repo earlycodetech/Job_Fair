@@ -1,5 +1,5 @@
-<section>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo.png" width="80" alt="">
@@ -13,9 +13,10 @@
                             <a class="nav-link active" aria-current="page" href="index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+
+                            <a class="nav-link" href="about-us">About Us</a>
                         </li>
-                         <li class="nav-item dropdown">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Categories
                             </a>
@@ -32,7 +33,8 @@
                             <a class="nav-link" href="#">Contact Us</a>
                         </li>
                     </ul>
-                    <form action="search-result.php" method="GET" class="d-flex" role="search">
+
+                    <form action="search-result" method="POST" class="d-flex" role="search">
                         <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">
                             <i class="fa-solid fa-search"></i>
@@ -41,4 +43,3 @@
                 </div>
             </div>
         </nav>
-    </section>
