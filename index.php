@@ -44,17 +44,17 @@
             <div class="suggest text-center">
                 <div class="row">
                     <div class="col-md-4 mt-5 hover">
-                            <a href="" class="text-text-decoration-none text-white text-uppercase fs-1 ms-3 d-flex align-items-center justify-content-center" style="background-image: url(assets/img/it.jpg); background-size: cover; height: 250px;">
+                            <a href="" class="text-decoration-none link-primary text-uppercase fw-bolder fs-1 ms-3 d-flex align-items-center justify-content-center" style="background-image: url(assets/img/it.jpg); background-size: cover; height: 250px;">
                                     it jobs
                             </a> 
                     </div>
                     <div class="col-md-4 mt-5 hover">
-                            <a href="" class="text-text-decoration-none text-white text-uppercase fs-1 ms-3 d-flex align-items-center justify-content-center" style="background-image: url(assets/img/engr.jpg); background-size: cover; height: 250px;">
+                            <a href="" class="text-decoration-none link-warning text-uppercase fw-bolder fs-1 ms-3 d-flex align-items-center justify-content-center" style="background-image: url(assets/img/engr.jpg); background-size: cover; height: 250px;">
                                     engineering jobs
                             </a> 
                     </div>
                     <div class="col-md-4 mt-5 hover">
-                            <a href="" class="text-text-decoration-none text-white text-uppercase fs-1 ms-3 d-flex align-items-center justify-content-center" style="background-image: url(assets/img/acct.jpg); background-size: cover; height: 250px;">
+                            <a href="" class="text-decoration-none link-danger text-uppercase fw-bolder fs-1 ms-3 d-flex align-items-center justify-content-center linl" style="background-image: url(assets/img/acct.jpg); background-size: cover; height: 250px;">
                                     accounting jobs
                             </a> 
                     </div>
@@ -65,9 +65,9 @@
 
     <section>
         <div class="btm-pg container-fluid bg-dark">
-            <div class="row">
+            <div class="row ms-5">
                 <div class="col-md-4 col-sm-6 col-12">
-                    <p class="text-white fs-3 border border-2 border-dark w-50 text-center py-2 mt-3">
+                    <p class="text-white fs-3 border border-5 border-white w-50 text-center mt-3">
                         Jobs
                     </p>
                     <ul class="fs-6 text-capitalize" style="list-style: none; color: white; ">
@@ -77,8 +77,8 @@
                         <li>discounted jobs</li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <p class="text-white fs-3 border border-2 border-dark w-50 text-center py-2 mt-3">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <p class="text-white fs-3 border border-5 border-white w-50 text-center mt-3">
                         Affiliates
                     </p>
                     <ul class="fs-6 text-capitalize" style="list-style: none; color: white; ">
@@ -89,8 +89,8 @@
                         <li>JobFinder</li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <p class="text-white fs-3 border border-2 border-dark w-50 text-center py-2 mt-3">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <p class="text-white fs-3 border border-5 border-white w-50 text-center mt-3">
                         Contact Us
                     </p>
                     <ul class="fs-6 text-capitalize" style="list-style: none; color: white; ">
