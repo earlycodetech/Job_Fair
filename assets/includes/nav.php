@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -12,6 +13,7 @@
                             <a class="nav-link active" aria-current="page" href="index">Home</a>
                         </li>
                         <li class="nav-item">
+
                             <a class="nav-link" href="about-us">About Us</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -31,6 +33,7 @@
                             <a class="nav-link" href="#">Contact Us</a>
                         </li>
                     </ul>
+
                     <form action="search-result" method="POST" class="d-flex" role="search">
                         <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">

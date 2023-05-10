@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <!-- Navbar -->
     <section>
       <?php include "assets/includes/nav.php" ?>
