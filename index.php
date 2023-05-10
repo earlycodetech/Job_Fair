@@ -16,13 +16,12 @@
 </head>
 
 <body>
-    <!-- Navbar -->
     <section>
         <?php include "assets/includes/nav.php" ?>
     </section>
+    
 
-    <!-- Hero -->
-    <section>
+  <section>
         <div  class="container-fluid vh-100 hero-bg d-flex justify-content-center align-items-center">
             <div class="fs-1 fw-bold text-center">
                 <p class="text-white">Welcome to Job Fair <br> Where Everybody must work</p>
