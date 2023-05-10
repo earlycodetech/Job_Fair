@@ -44,23 +44,18 @@
             <div class="suggest text-center">
                 <div class="row">
                     <div class="col-md-4 mt-5 hover">
-                            <a href="" class="">
-                                <h3 class="text-white text-uppercase fs-1 ms-3 d-flex align-items-center justify-content-center" style="background-image: url(assets/img/it.jpg); background-size: cover; height: 250px;">
+                            <a href="" class="text-text-decoration-none text-white text-uppercase fs-1 ms-3 d-flex align-items-center justify-content-center" style="background-image: url(assets/img/it.jpg); background-size: cover; height: 250px;">
                                     it jobs
                             </a> 
                     </div>
                     <div class="col-md-4 mt-5 hover">
-                            <a href="" class="">
-                                <h3 class="text-white text-uppercase fs-1 ms-3 d-flex align-items-center justify-content-center" style="background-image: url(assets/img/engr.jpg); background-size: cover; height: 250px;">
+                            <a href="" class="text-text-decoration-none text-white text-uppercase fs-1 ms-3 d-flex align-items-center justify-content-center" style="background-image: url(assets/img/engr.jpg); background-size: cover; height: 250px;">
                                     engineering jobs
-                                </h3>
                             </a> 
                     </div>
                     <div class="col-md-4 mt-5 hover">
-                            <a href="" class="">
-                                <h3 class="text-white text-uppercase fs-1 ms-3 d-flex align-items-center justify-content-center" style="background-image: url(assets/img/acct.jpg); background-size: cover; height: 250px;">
+                            <a href="" class="text-text-decoration-none text-white text-uppercase fs-1 ms-3 d-flex align-items-center justify-content-center" style="background-image: url(assets/img/acct.jpg); background-size: cover; height: 250px;">
                                     accounting jobs
-                                </h3>
                             </a> 
                     </div>
                 </div>
