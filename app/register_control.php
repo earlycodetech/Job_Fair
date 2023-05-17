@@ -40,6 +40,24 @@
             header("Location: ../register");
             die();
         }
+
+        $sql = "SELECT email FROM users WHERE email = ?";
+        $stmt = mysqli_stmt_init($dbConnect);
+        mysqli_stmt_prepare($stmt,$sql);
+        mysqli_stmt_bind_param($stmt, "s", $email);
+        $execute = mysqli_stmt_execute($stmt);
+        
+        // 6. Get the result after we execute the query
+        $result = mysqli_stmt_get_result($stmt);
+        
+        $number_of_rows = mysqli_num_rows($result);
+        
+        // 7. Check if the number of rows that has the same email is greater than zero
+        if ($number_of_rows > 0) {
+            $_SESSION['error_msg'] = "This account already exists";
+            header("Location: ../register");
+            die();
+        }
         elseif (strlen($password) < 8) {
             $_SESSION['error_msg'] = "Password is too short, max: 8 characters";
             header("Location: ../register");

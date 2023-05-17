@@ -1,3 +1,9 @@
+<?php
+    require "../assets/includes/sessions.php";
+
+    auth_guard();
+    echo $_SESSION['active_user'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +13,8 @@
     <title>Dashboard</title>
 </head>
 <body>
+
+<a href="../app/logout">Logout</a> <br>
     <h1>Welcome to your dashboard</h1>
 </body>
 </html>

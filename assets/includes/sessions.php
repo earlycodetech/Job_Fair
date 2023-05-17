@@ -37,3 +37,11 @@ function success_msg()
     }
 }
 
+
+// This checks if the session of active user does not exist
+function auth_guard()
+{
+  if (!isset($_SESSION['active_user'])) {
+    header("Location: ../login");
+  }
+}

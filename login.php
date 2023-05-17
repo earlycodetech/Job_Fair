@@ -1,3 +1,6 @@
+<?php 
+    require "assets/includes/sessions.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,17 +25,18 @@
     
     <section>
         <div class="container my-5">
-            <div class="card border-0 shadow mx-auto" style="max-width: 400px;">
+            <div class="card border-0 shadow mx-auto p-1" style="max-width: 400px;">
+                <?php success_msg(); error_msg(); ?>
                 <h5 class="card-header bg-white pt-4">Login to your account</h5>
-                <div class="card-body">
+                <form method="post" action="app/login_control.php" class="card-body">
                     <label for="" class="form-label">Email:</label>
-                    <input type="email" name="email" class="form-control mb-5">
+                    <input type="email" name="email" class="form-control mb-3">
 
                     <label for="" class="form-label">Password:</label>
-                    <input type="password" name="password" class="form-control mb-5">
+                    <input type="password" name="password" class="form-control mb-3">
 
-                    <button class="btn btn-primary my-3 w-100">Login</button>
-                </div>
+                    <button name="login" class="btn btn-primary my-3 w-100">Login</button>
+                </form>
             </div>
         </div>
     </section>
