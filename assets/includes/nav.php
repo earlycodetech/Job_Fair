@@ -32,6 +32,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact Us</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register">Create an account</a>
+                        </li>
                     </ul>
 
                     <form action="search-result" method="POST" class="d-flex" role="search">
