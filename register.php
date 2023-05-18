@@ -82,7 +82,7 @@
                       <div class="col-md-6 mb-4">
 
                         <select name="state" class="form-select">
-                          <option>State</option>
+                          <option disabled>State</option>
                           <option>Abuja</option>
                           <option>Lagos</option>
                           <option>Imo</option>
@@ -94,7 +94,7 @@
                       <div class="col-md-6 mb-4">
 
                         <select class="form-select" name="job">
-                          <option>Job description</option>
+                          <option disabled>Job description</option>
                           <option>Accountant</option>
                           <option>Engineer</option>
                           <option>Pharmacist</option>
