@@ -1,7 +1,13 @@
 <?php
-require "../assets/includes/sessions.php";
+    require "../assets/includes/db_connect.php";
+    require "../assets/includes/sessions.php";
 
-auth_guard();
+    auth_guard();
+    $id =  $_SESSION['active_user'];
+
+    $sql = "SELECT * FROM users WHERE id = '$id' ";
+    $query = mysqli_query($dbConnect, $sql);
+    $row = mysqli_fetch_assoc($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,12 +35,12 @@ auth_guard();
                 </div>
                 <div class="col-md-6 mb-3">
                     <ul class="list-group">
-                        <li class="list-group-item">Full Name: </li>
-                        <li class="list-group-item">Email: </li>
-                        <li class="list-group-item">Gender: </li>
-                        <li class="list-group-item">Address: </li>
-                        <li class="list-group-item">Job Description: </li>
-                        <li class="list-group-item">State: </li>
+                        <li class="list-group-item">Full Name: <?php echo $row['full_name'] ?> </li>
+                        <li class="list-group-item">Email: <?php echo $row['email'] ?></li>
+                        <li class="list-group-item">Gender:  <?php echo $row['gender'] ?></li>
+                        <li class="list-group-item">Address: <?php echo $row['address'] ?></li>
+                        <li class="list-group-item">Job Description: <?php echo $row['job'] ?></li>
+                        <li class="list-group-item">State: <?php echo $row['state'] ?></li>
                     </ul>
                 </div>
             </div>
