@@ -16,7 +16,7 @@ $row = mysqli_fetch_assoc($query);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Profile  </title>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/offcanvas-navbar.css">
 </head>
@@ -32,7 +32,16 @@ $row = mysqli_fetch_assoc($query);
             <div class="row my-5">
 
                 <div class="col-md-6 mb-3">
-                    <img src="../assets/img/about5.jpg" alt="" class="img-fluid">
+                    <form action="" method="post">
+                        <label for="avatar">
+                            <img src="../assets/img/about5.jpg" alt="" class="img-fluid">
+                        </label>
+                        <div class="input-group mt-3">
+                            <input type="file" name="" id="avatar" class="form-control">
+                            <button class="btn btn-success">Upload</button>
+                        </div>
+                    </form>
+
                 </div>
                 <form class="col-md-6 mb-3" method="post" action="../app/profile_update.php">
                     <div class="m-2">
