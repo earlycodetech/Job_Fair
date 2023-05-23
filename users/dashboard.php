@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row my-5">
                 <div class="col-md-6 mb-3">
-                    <img src="../assets/img/about5.jpg" alt="" class="img-fluid">
+                <img src="../assets/uploads/<?php echo $row['avatar'].'?'.mt_rand(); ?>" alt="" class="img-fluid">
                 </div>
                 <div class="col-md-6 mb-3">
                     <ul class="list-group">
