@@ -32,13 +32,13 @@ $row = mysqli_fetch_assoc($query);
             <div class="row my-5">
 
                 <div class="col-md-6 mb-3">
-                    <form action="" method="post">
+                    <form action="../app/avatar_upload.php" method="post" enctype="multipart/form-data">
                         <label for="avatar">
-                            <img src="../assets/img/about5.jpg" alt="" class="img-fluid">
+                            <img src="../assets/uploads/<?php echo $row['avatar'].'?'.mt_rand(); ?>" alt="" class="img-fluid">
                         </label>
                         <div class="input-group mt-3">
-                            <input type="file" name="" id="avatar" class="form-control">
-                            <button class="btn btn-success">Upload</button>
+                            <input type="file" name="file" accept="image/*" id="avatar" class="form-control" required>
+                            <button class="btn btn-success" name="upload" >Upload</button>
                         </div>
                     </form>
 
