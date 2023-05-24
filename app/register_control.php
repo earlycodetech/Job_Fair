@@ -41,18 +41,23 @@
             die();
         }
 
+       /* This code is checking if the email entered by the user already exists in the database. It
+       does this by preparing a SELECT statement that selects the email column from the users table
+       where the email is equal to the email entered by the user. It then binds the email parameter
+       to the prepared statement and executes it. The result of the executed statement is then
+       fetched and the number of rows returned is checked. If the number of rows is greater than
+       zero, it means that the email already exists in the database and the user is redirected to
+       the registration page with an error message. */
         $sql = "SELECT email FROM users WHERE email = ?";
         $stmt = mysqli_stmt_init($dbConnect);
         mysqli_stmt_prepare($stmt,$sql);
         mysqli_stmt_bind_param($stmt, "s", $email);
         $execute = mysqli_stmt_execute($stmt);
         
-        // 6. Get the result after we execute the query
         $result = mysqli_stmt_get_result($stmt);
         
         $number_of_rows = mysqli_num_rows($result);
         
-        // 7. Check if the number of rows that has the same email is greater than zero
         if ($number_of_rows > 0) {
             $_SESSION['error_msg'] = "This account already exists";
             header("Location: ../register");
