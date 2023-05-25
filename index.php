@@ -1,3 +1,6 @@
+<?php 
+    require "assets/includes/db_connect.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,48 +37,33 @@
 
     <section>
         
-        <div class="container-fluid w-100 hero-two-bg row">
+        <div class="container-fluid w-100 hero-two-bg">
+            
             <h1 class="text-center text-decoration-underline fw-bolder fs-1 text-white">
                 Apply For Jobs Here
             </h1>
 
-            <div class="categories col-md-3 border border-5 border-secondary-subtle rounded-top m-5 bg-white text-dark">
-                <h6 class="text-uppercase text-center text-bg-dark text-white">
-                <i class="fa-solid fa-database text-white mx-2"></i> it jobs
-                </h6>    
-            </div>
-            <div class="categories col-md-3 px-2 py-2 border border-5 border-secondary-subtle rounded-top m-5 bg-white text-dark">
-                <h6 class="text-uppercase text-center text-bg-dark text-white">
-                <i class="fa-solid fa-file-invoice-dollar text-white mx-2"></i>accounting jobs
-                </h6>
-            </div>
-            <div class="categories col-md-3 px-2 py-2 border border-5 border-secondary-subtle rounded-top m-5 bg-white text-dark">
-                <h6 class="text-uppercase text-center text-bg-dark text-white">
-                <i class="fa-solid fa-gears text-white mx-2"></i></i>engineering jobs
-                </h6>
-                
-            </div>
-            <div class="categories col-md-3 px-2 py-2 border border-5 border-secondary-subtle rounded-top m-5 bg-white text-dark">
-                <h6 class="text-uppercase text-center text-bg-dark text-white">
-                <i class="fa-solid fa-headset text-white mx-2"></i>customer service jobs
-                </h6>
-                
-            </div>
-            <div class="categories col-md-3 px-2 py-2 border border-5 border-secondary-subtle rounded-top m-5 bg-white text-dark">
-                <h6 class="text-uppercase text-center text-bg-dark text-white">
-                <i class="fa-solid fa-list-check text-white mx-2"></i>front desk jobs
-                </h6>
-                
-            </div>
-            <div class="categories col-md-3 px-2 py-2 border border-5 border-secondary-subtle rounded-top m-5 bg-white text-dark">
-                <h6 class="text-uppercase text-center text-bg-dark text-white">
-                <i class="fa-regular fa-user text-white mx-2"></i>personal assistant jobs
-                </h6>
-                
+            <div class="row">
+
+                <?php 
+                    $sql = "SELECT * FROM posted_jobs ORDER BY id DESC";
+                    $query = mysqli_query($dbConnect, $sql);
+
+                    while ($job = mysqli_fetch_assoc($query)) {
+                ?>
+                    <div class="categories col-md-3 border border-5 border-secondary-subtle rounded-top m-5 bg-white text-dark">
+                        <a href="job-description?q=<?php echo $job['id']; ?>" class="nav-link">
+                            <h6 class="text-uppercase text-center text-bg-dark p-4 text-white">
+                            <i class="fa-solid fa-database text-white mx-2"></i> <?php echo $job['title']; ?>
+                            </h6>    
+                        </a>
+                    </div>
+                <?php } ?>
             </div>
 
     </section>
 
+    <!-- Footer -->
     <section>
         <div class="btm-pg container-fluid bg-dark d-flex">
             <div class="col-md-4 col-sm-6 col-12">

@@ -13,6 +13,9 @@
                     <a class="nav-link active" aria-current="page" href="dashboard">Dashboard</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="all-jobs">All Jobs</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="post-job">Post Job</a>
                 </li>
                 <li class="nav-item">
