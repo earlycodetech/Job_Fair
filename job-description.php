@@ -48,6 +48,11 @@ $job = mysqli_fetch_assoc($result);
             <div class="card">
                 <h5 class="pt-3 card-header bg-white">
                     <?php echo $job['title']; ?>
+                    <br>
+                    <span class="d-block fs-6 mt-4">
+                        Posted: <?php echo date("jS M. Y h:i a", strtotime($job['created_at'])); ?>
+                    </span>
+                    
                 </h5>
                 <div class="pt-3 card-header bg-white text-center">
                     <p class="p-1 d-inline px-2 text-white text-uppercase rounded <?php echo $job['job_status'] == 'available' ? 'bg-success' : 'bg-danger' ?>">
