@@ -10,3 +10,12 @@
     background-position: center;
     background-attachment: fixed;
 }
+
+.apply:hover {
+    color: red;
+}
+
+.hover:hover {
+    cursor: auto;
+    transform: scale(0.8);
+}

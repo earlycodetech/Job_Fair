@@ -70,5 +70,3 @@ $job = mysqli_fetch_assoc($result);
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
-
-</html>
